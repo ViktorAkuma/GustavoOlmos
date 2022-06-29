@@ -31,16 +31,21 @@
         onmouseover="cargarAyudaEstadoCivil()">
         <br>
         <label for="datFechaDeNacimiento">Fecha de Nacimiento(date)</label>
-        <input type="date" name="datFechaDeNacimiento" id="datFechaDeNacimiento">
+        <input type="date" name="datFechaDeNacimiento" id="datFechaDeNacimiento"
+        onfocus="cargarAyudaFecha()">
         <br>
         <label for="dttHorarioTicket">Horario Ticket(datetime-local))</label>
-        <input type="datetime-local" name="dttHorarioTicket" id="dttHorarioTicket">
+        <input type="datetime-local" name="dttHorarioTicket" id="dttHorarioTicket"
+        onfocus="cargarAyudaFechaYHora()">
         <br>
         <label for="timHorarioTicket">Horario Ticket(time)</label>
-        <input type="time" name="timHorarioTicket" id="timHorarioTicket">
+        <input type="time" name="timHorarioTicket" id="timHorarioTicket"
+        onfocus="cargarAyudaHora()">
         <br>
         <label for="txtPassword">Password(textBox)</label>
         <input type="password" name="txtPassword" id="txtPassword">
+        <input type="button" name="txtPassword" id="txtPassword" value="Ver contraseña"
+        onclick="verContraseña()">
         <br>
         <label for="txtEmail">Email(email)</label>
         <input type="email" name="txtEmail" id="txtEmail" required>
